@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #98FB98;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header:hover {
+    background: #98fb988c;
+}
+
+
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.book {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.book:hover {
+    transform: scale(1.06);
+}
